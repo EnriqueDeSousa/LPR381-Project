@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\bin\Debug\LPR Project.exe.config
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\bin\Debug\LPR Project.exe
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\bin\Debug\LPR Project.pdb
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR_Project.Home.resources
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR_Project.Properties.Resources.resources
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.csproj.GenerateResource.cache
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.exe
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.pdb
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR Project.exe.config
+C:\Users\User\Desktop\BC Stuff\LPR381\LPR381-Project\LPR Project\obj\Debug\LPR_Project.CreateModel.resources
