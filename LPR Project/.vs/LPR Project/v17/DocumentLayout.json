@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\createmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:createmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\simplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:simplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\linearprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:linearprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\branchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:branchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\createmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:createmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +39,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SimplexSolver.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\SimplexSolver.cs",
+              "RelativeDocumentMoniker": "SimplexSolver.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\SimplexSolver.cs",
+              "RelativeToolTip": "SimplexSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T16:11:22.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LinearProgram.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\LinearProgram.cs",
+              "RelativeDocumentMoniker": "LinearProgram.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\LinearProgram.cs",
+              "RelativeToolTip": "LinearProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T16:10:08.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BranchAndBoundSolver.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSolver.cs",
+              "RelativeDocumentMoniker": "BranchAndBoundSolver.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSolver.cs",
+              "RelativeToolTip": "BranchAndBoundSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T15:56:47.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Algorithms.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Algorithms.cs",
+              "RelativeDocumentMoniker": "Algorithms.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Algorithms.cs [Design]",
+              "RelativeToolTip": "Algorithms.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T13:55:35.193Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CreateModel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\CreateModel.cs",
               "RelativeDocumentMoniker": "CreateModel.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\CreateModel.cs [Design]",
               "RelativeToolTip": "CreateModel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T10:20:21.89Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-10T10:20:21.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs [Design]",
               "RelativeToolTip": "Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T12:28:01.914Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-05T12:28:01.914Z"
             }
           ]
         }

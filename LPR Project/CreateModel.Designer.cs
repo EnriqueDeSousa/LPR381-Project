@@ -47,6 +47,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnFinish = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.grpProblem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConstraints)).BeginInit();
             this.SuspendLayout();
@@ -217,11 +218,21 @@
             this.btnFinish.Text = "Finish";
             this.btnFinish.UseVisualStyleBackColor = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(73, 23);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
             // CreateModel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -269,5 +280,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Button btnBack;
     }
 }

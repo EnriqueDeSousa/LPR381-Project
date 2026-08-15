@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:algorithms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,15 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
-              "RelativeDocumentMoniker": "Home.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
-              "RelativeToolTip": "Home.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBUAAAAfAAAAAAAAAA==",
+              "Title": "Algorithms.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Algorithms.cs",
+              "RelativeDocumentMoniker": "Algorithms.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Algorithms.cs [Design]",
+              "RelativeToolTip": "Algorithms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T10:27:15.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T13:55:35.193Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
