@@ -16,9 +16,12 @@ namespace LPR_Project
         {
             InitializeComponent();
         }
+
+        BranchAndBoundSimplex branchAndBoundSimplex = new BranchAndBoundSimplex();
+
         private void btnCreateNewModel_Click(object sender, EventArgs e)
         {
-            
+            branchAndBoundSimplex.Show();
         }
     }
 }

@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BranchAndBoundSimplex
+namespace LPR_Project
 {
     public class BranchAndBoundResult
     {
         public bool Found { get; set; }
-        public double[] Solution { get; set; } = Array.Empty<double>();
+        public double[] Solution { get; set; }
         public double Objective { get; set; }
         public int NodesExplored { get; set; }
+
+        public BranchAndBoundResult()
+        {
+            Solution = new double[0];
+        }
     }
 
     public class BranchAndBoundSolver
@@ -18,94 +23,95 @@ namespace BranchAndBoundSimplex
 
         private readonly HashSet<int> _integerVariables;
         private readonly bool _verboseSimplex;
+        private readonly Action<string> _log;
         private double _bestObjective = double.NegativeInfinity;
-        private double[]? _bestSolution;
+        private double[] _bestSolution;
         private int _nodeCounter;
 
-        public BranchAndBoundSolver(IEnumerable<int> integerVariableIndices, bool verboseSimplex = false)
+        public BranchAndBoundSolver(IEnumerable<int> integerVariableIndices, bool verboseSimplex, Action<string> logger)
         {
             _integerVariables = new HashSet<int>(integerVariableIndices);
             _verboseSimplex = verboseSimplex;
+            _log = logger != null ? logger : (s => Console.WriteLine(s));
+            _bestSolution = null;
         }
 
         public BranchAndBoundResult Solve(LinearProgram rootLp)
         {
-            var stack = new Stack<(LinearProgram lp, int parentId, string description)>();
-            stack.Push((rootLp, 0, "Root (LP relaxation)"));
+            Stack<NodeItem> stack = new Stack<NodeItem>();
+            stack.Push(new NodeItem(rootLp, 0, "Root (LP relaxation)"));
 
             while (stack.Count > 0)
             {
-                var (lp, parentId, description) = stack.Pop();
+                NodeItem item = stack.Pop();
                 _nodeCounter++;
                 int nodeId = _nodeCounter;
 
-                Console.WriteLine();
-                Console.WriteLine($"=== Node {nodeId} (parent {parentId}) : {description} ===");
+                _log("");
+                _log("=== Node " + nodeId + " (parent " + item.ParentId + ") : " + item.Description + " ===");
 
-                var result = SimplexSolver.Solve(lp, _verboseSimplex);
+                SimplexResult result = SimplexSolver.Solve(item.Lp, _verboseSimplex);
                 if (_verboseSimplex)
-                    foreach (var line in result.Log) Console.WriteLine(line);
+                {
+                    foreach (string line in result.Log) _log(line);
+                }
 
                 if (result.Status == SimplexStatus.Infeasible)
                 {
-                    Console.WriteLine($"Node {nodeId}: LP relaxation is infeasible -> pruned.");
+                    _log("Node " + nodeId + ": LP relaxation is infeasible -> pruned.");
                     continue;
                 }
                 if (result.Status == SimplexStatus.Unbounded)
                 {
-                    Console.WriteLine($"Node {nodeId}: LP relaxation is unbounded -> pruned (check your model).");
+                    _log("Node " + nodeId + ": LP relaxation is unbounded -> pruned (check your model).");
                     continue;
                 }
 
-                Console.WriteLine($"Node {nodeId}: relaxation objective = {result.ObjectiveValue:F4}, " +
-                                   $"x = [{string.Join(", ", result.VariableValues.Select(v => v.ToString("F4")))}]");
+                _log("Node " + nodeId + ": relaxation objective = " + result.ObjectiveValue.ToString("F4") +
+                     ", x = [" + string.Join(", ", result.VariableValues.Select(v => v.ToString("F4"))) + "]");
 
-                // Bound: if even the relaxed optimum can't beat the best
-                // integer solution found so far, this branch is useless.
                 if (result.ObjectiveValue <= _bestObjective + Tolerance)
                 {
-                    Console.WriteLine($"Node {nodeId}: bound {result.ObjectiveValue:F4} does not improve on " +
-                                       $"incumbent {_bestObjective:F4} -> pruned by bound.");
+                    _log("Node " + nodeId + ": bound " + result.ObjectiveValue.ToString("F4") +
+                         " does not improve on incumbent " + _bestObjective.ToString("F4") + " -> pruned by bound.");
                     continue;
                 }
 
-                int branchVar = ChooseBranchingVariable(result.VariableValues, out double fractionalValue);
+                double fractionalValue;
+                int branchVar = ChooseBranchingVariable(result.VariableValues, out fractionalValue);
 
                 if (branchVar == -1)
                 {
-                    // All required variables are (numerically) integral.
-                    Console.WriteLine($"Node {nodeId}: solution is integer-feasible, objective = {result.ObjectiveValue:F4}");
+                    _log("Node " + nodeId + ": solution is integer-feasible, objective = " + result.ObjectiveValue.ToString("F4"));
                     if (result.ObjectiveValue > _bestObjective)
                     {
                         _bestObjective = result.ObjectiveValue;
                         _bestSolution = result.VariableValues;
-                        Console.WriteLine($"Node {nodeId}: *** new incumbent solution ***");
+                        _log("Node " + nodeId + ": *** new incumbent solution ***");
                     }
                     continue;
                 }
 
                 double floorVal = Math.Floor(fractionalValue);
                 double ceilVal = Math.Ceiling(fractionalValue);
-                string varName = lp.VariableNames[branchVar];
+                string varName = item.Lp.VariableNames[branchVar];
 
-                Console.WriteLine($"Node {nodeId}: branching on {varName} = {fractionalValue:F4}  ->  " +
-                                   $"{varName} <= {floorVal}  and  {varName} >= {ceilVal}");
+                _log("Node " + nodeId + ": branching on " + varName + " = " + fractionalValue.ToString("F4") +
+                     "  ->  " + varName + " <= " + floorVal + "  and  " + varName + " >= " + ceilVal);
 
-                var leftChild = lp.WithExtraConstraint(branchVar, Relation.LE, floorVal);
-                var rightChild = lp.WithExtraConstraint(branchVar, Relation.GE, ceilVal);
+                LinearProgram leftChild = item.Lp.WithExtraConstraint(branchVar, Relation.LE, floorVal);
+                LinearProgram rightChild = item.Lp.WithExtraConstraint(branchVar, Relation.GE, ceilVal);
 
-                // Push right first so the left (<=) branch is explored first (DFS order is cosmetic here).
-                stack.Push((rightChild, nodeId, $"{varName} >= {ceilVal}"));
-                stack.Push((leftChild, nodeId, $"{varName} <= {floorVal}"));
+                stack.Push(new NodeItem(rightChild, nodeId, varName + " >= " + ceilVal));
+                stack.Push(new NodeItem(leftChild, nodeId, varName + " <= " + floorVal));
             }
 
-            return new BranchAndBoundResult
-            {
-                Found = _bestSolution != null,
-                Solution = _bestSolution ?? Array.Empty<double>(),
-                Objective = _bestObjective,
-                NodesExplored = _nodeCounter
-            };
+            BranchAndBoundResult finalResult = new BranchAndBoundResult();
+            finalResult.Found = _bestSolution != null;
+            finalResult.Solution = _bestSolution != null ? _bestSolution : new double[0];
+            finalResult.Objective = _bestObjective;
+            finalResult.NodesExplored = _nodeCounter;
+            return finalResult;
         }
 
         private int ChooseBranchingVariable(double[] values, out double fractionalValue)
@@ -127,6 +133,20 @@ namespace BranchAndBoundSimplex
                 }
             }
             return chosen;
+        }
+
+        private class NodeItem
+        {
+            public LinearProgram Lp { get; private set; }
+            public int ParentId { get; private set; }
+            public string Description { get; private set; }
+
+            public NodeItem(LinearProgram lp, int parentId, string description)
+            {
+                Lp = lp;
+                ParentId = parentId;
+                Description = description;
+            }
         }
     }
 }

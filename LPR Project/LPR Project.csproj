@@ -46,19 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms.cs">
+    <Compile Include="BranchAndBoundSimplex.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Algorithms.Designer.cs">
-      <DependentUpon>Algorithms.cs</DependentUpon>
     </Compile>
     <Compile Include="BranchAndBoundSolver.cs" />
-    <Compile Include="CreateModel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateModel.Designer.cs">
-      <DependentUpon>CreateModel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,12 +60,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimplexSolver.cs" />
-    <EmbeddedResource Include="Algorithms.resx">
-      <DependentUpon>Algorithms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateModel.resx">
-      <DependentUpon>CreateModel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
