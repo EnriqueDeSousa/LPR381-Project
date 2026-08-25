@@ -8,14 +8,7 @@ using LPR381Solver.Solvers;
 
 namespace LPR381Solver
 {
-    /// <summary>
-    /// Menu-driven entry point. Builds solve.exe as required by the assignment brief:
-    ///   - Reads an input text file with the mathematical model.
-    ///   - Lets the user pick Primal Simplex or Revised Primal Simplex.
-    ///   - Displays the canonical form and every iteration.
-    ///   - Writes everything to an output text file.
-    ///   - Offers a sensitivity-analysis sub-menu once an optimal solution exists.
-    /// </summary>
+    
     public static class Program
     {
         private static LPModel? _model;
@@ -122,8 +115,6 @@ namespace LPR381Solver
             File.WriteAllText(_outputPath, text);
             Console.WriteLine($"(Also written to {_outputPath})");
 
-            // Sensitivity analysis is implemented against the tableau-form PrimalSimplex result,
-            // so quietly keep one in sync whenever Revised Simplex reaches an optimum too.
             if (_revisedResult.Status == SolveStatus.Optimal)
                 _primalResult = PrimalSimplex.Solve(_sf!);
         }
