@@ -7,13 +7,6 @@ using LPR381Solver.Models;
 
 namespace LPR381Solver.IO
 {
-    /// <summary>
-    /// Reads the plain-text input file described in the LPR381 project brief:
-    ///   Line 1            : max/min, then one signed coefficient per decision variable
-    ///   One line per constraint : one signed coefficient per decision variable,
-    ///                              then a relation token glued to its RHS (e.g. "&lt;=40")
-    ///   Last line          : one sign restriction per decision variable (+, -, urs, int, bin)
-    /// </summary>
     public static class InputParser
     {
         public static LPModel Parse(string path)
