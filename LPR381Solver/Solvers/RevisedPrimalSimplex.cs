@@ -5,11 +5,7 @@ using LPR381Solver.Utils;
 
 namespace LPR381Solver.Solvers
 {
-    /// <summary>
-    /// A single iteration's worth of information for the Revised Simplex, kept for the output file:
-    /// the current basis inverse (product form), the price vector (y = cB * B^-1), and the
-    /// reduced ("priced out") costs of every non-basic column.
-    /// </summary>
+   
     public class RevisedIteration
     {
         public int IterationNumber;
@@ -37,12 +33,7 @@ namespace LPR381Solver.Solvers
         public string Message = "";
     }
 
-    /// <summary>
-    /// Revised Primal Simplex Algorithm using the product form of the inverse.
-    /// Instead of carrying a full tableau, only B^-1 (m x m) is maintained; at each iteration it is
-    /// updated by pre-multiplying by an "eta" (elementary) matrix built from the entering column,
-    /// which is the "Product Form and Price-Out" the assignment brief asks for.
-    /// </summary>
+    
     public static class RevisedPrimalSimplex
     {
         private const double Eps = 1e-9;
