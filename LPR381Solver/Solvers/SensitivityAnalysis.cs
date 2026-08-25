@@ -19,15 +19,7 @@ namespace LPR381Solver.Solvers
         }
     }
 
-    /// <summary>
-    /// All sensitivity-analysis operations act on the FINAL (optimal) tableau produced by
-    /// <see cref="PrimalSimplex"/>. Everything is derived from two facts about a simplex tableau
-    /// at optimality:
-    ///   1) The sub-matrix of the final tableau sitting under the columns that were the identity
-    ///      matrix in the very first tableau (i.e. the initial basis columns) IS B^-1.
-    ///   2) Reduced costs (c_j - z_j) for every column can be recomputed at any time from cB and
-    ///      the current tableau.
-    /// </summary>
+    
     public static class SensitivityAnalysis
     {
         private const double Eps = 1e-9;
