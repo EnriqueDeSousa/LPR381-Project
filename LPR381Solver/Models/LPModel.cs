@@ -2,9 +2,7 @@ using System.Collections.Generic;
 
 namespace LPR381Solver.Models
 {
-    /// <summary>
-    /// Relation type for a constraint.
-    /// </summary>
+  
     public enum Relation
     {
         LessOrEqual,
@@ -12,10 +10,7 @@ namespace LPR381Solver.Models
         Equal
     }
 
-    /// <summary>
-    /// Sign restriction on a decision variable, as read from the input file
-    /// (last line of the input format: +, -, urs, int, bin).
-    /// </summary>
+    
     public enum SignRestriction
     {
         Positive,   // "+"  : x >= 0 (default LP behaviour)
@@ -49,10 +44,7 @@ namespace LPR381Solver.Models
         };
     }
 
-    /// <summary>
-    /// The full parsed Linear/Integer Programming model, exactly as specified in the input file
-    /// (NOT a canonical form -- conversion to canonical/standard form happens in the solvers).
-    /// </summary>
+    
     public class LPModel
     {
         public bool IsMax { get; set; }
