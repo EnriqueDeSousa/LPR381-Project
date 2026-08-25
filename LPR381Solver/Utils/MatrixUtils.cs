@@ -2,10 +2,7 @@ using System;
 
 namespace LPR381Solver.Utils
 {
-    /// <summary>
-    /// Small, dependency-free dense matrix helpers. Not optimised -- the models used in this
-    /// project are small (assignment-sized), so clarity is favoured over performance.
-    /// </summary>
+    
     public static class MatrixUtils
     {
         public static double[,] Identity(int n)
