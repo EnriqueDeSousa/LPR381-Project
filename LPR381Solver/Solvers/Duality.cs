@@ -15,9 +15,7 @@ namespace LPR381Solver.Solvers
     ///   var x_j &lt;= 0                      dual constraint j is &gt;=
     ///   var x_j unrestricted              dual constraint j is  =
     ///
-    /// If the primal is a MIN problem it is first converted to an equivalent MAX problem
-    /// (multiply objective by -1) before applying the table, and the result is converted back.
-    /// </summary>
+    
     public static class Duality
     {
         public static LPModel BuildDual(LPModel primal)
