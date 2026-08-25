@@ -4,11 +4,7 @@ using LPR381Solver.Models;
 
 namespace LPR381Solver.Solvers
 {
-    /// <summary>
-    /// Classic tableau Primal Simplex method using the Big-M technique for &gt;= and = constraints.
-    /// Dantzig's rule (most positive reduced cost) is used to choose the entering variable, with
-    /// Bland's rule (smallest index) as a tie-breaker to guard against cycling.
-    /// </summary>
+   
     public static class PrimalSimplex
     {
         private const double Eps = 1e-9;
