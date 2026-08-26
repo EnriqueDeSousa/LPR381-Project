@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace LPR_Project
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
+        }
+
+        BranchAndBoundSimplex branchAndBoundSimplex = new BranchAndBoundSimplex();
+
+        private void btnCreateNewModel_Click(object sender, EventArgs e)
+        {
+            branchAndBoundSimplex.Show();
         }
     }
 }
