@@ -8,3 +8,10 @@ namespace LPR381Project.Common.Errors
         }
     }
 }
+
+if (pivot == 0)
+{
+    throw new NumericalException(
+        "Cannot perform pivot operation because the pivot is zero."
+    );
+}

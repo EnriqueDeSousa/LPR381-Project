@@ -8,3 +8,10 @@ namespace LPR381Project.Common.Errors
         }
     }
 }
+
+if (model == null)
+{
+    throw new StateException(
+        "A programming model must be loaded before solving."
+    );
+}

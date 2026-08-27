@@ -1,10 +1,14 @@
 namespace LPR381Project.Common.Errors
 {
-    public class AlgorithmNotSupportedException : SolverException
+    public class UnboundedModelException : SolverException
     {
-        public AlgorithmNotSupportedException(string message)
-            : base(ErrorCode.AlgorithmNotSupported, message)
+        public UnboundedModelException(string message)
+            : base(ErrorCode.ModelUnbounded, message)
         {
         }
     }
 }
+
+throw new AlgorithmNotSupportedException(
+    "Primal Simplex cannot solve a binary integer programming model."
+);
