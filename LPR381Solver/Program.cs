@@ -11,7 +11,6 @@ namespace LPR381Solver
     
     public static class Program
     {
-
         private static LPModel? _model;
         private static StandardForm? _sf;
         private static SimplexResult? _primalResult;      // used as the basis for all sensitivity analysis
@@ -294,13 +293,6 @@ namespace LPR381Solver
             {
                 Console.WriteLine(dualResult.Message);
             }
-            
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
         }
     }
 }

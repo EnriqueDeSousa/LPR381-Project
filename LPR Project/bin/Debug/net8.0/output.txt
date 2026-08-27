@@ -1,0 +1,51 @@
+=== Canonical Form ===
+max (solved internally as max) Z = +3x1 + +5x2 + +0s1 + +0s2 + +0s3
+  +1x1 + +0x2 + +1s1 + +0s2 + +0s3 = 4.000
+  +0x1 + +2x2 + +0s1 + +1s2 + +0s3 = 12.000
+  +3x1 + +2x2 + +0s1 + +0s2 + +1s3 = 18.000
+  all variables >= 0
+
+--- Iteration 0 ---
+B^-1:
+      1.000      0.000      0.000
+      0.000      1.000      0.000
+      0.000      0.000      1.000
+Basis: s1, s2, s3
+Price vector y = cB*B^-1: [0.000, 0.000, 0.000]
+x_B (B^-1 * b): [4.000, 12.000, 18.000]
+Priced-out reduced costs:
+  x1=3.000  x2=5.000  s1=0.000  s2=0.000  s3=0.000
+Objective value this iteration: 0.000
+Entering: x2   Leaving: s2   (eta/direction column d = [0.000, 2.000, 2.000])
+
+--- Iteration 1 ---
+B^-1:
+      1.000      0.000      0.000
+      0.000      0.500      0.000
+      0.000     -1.000      1.000
+Basis: s1, x2, s3
+Price vector y = cB*B^-1: [0.000, 2.500, 0.000]
+x_B (B^-1 * b): [4.000, 6.000, 6.000]
+Priced-out reduced costs:
+  x1=3.000  x2=0.000  s1=0.000  s2=-2.500  s3=0.000
+Objective value this iteration: 30.000
+Entering: x1   Leaving: s3   (eta/direction column d = [1.000, 0.000, 3.000])
+
+--- Iteration 2 ---
+B^-1:
+      1.000      0.333     -0.333
+      0.000      0.500      0.000
+      0.000     -0.333      0.333
+Basis: s1, x2, x1
+Price vector y = cB*B^-1: [0.000, 1.500, 1.000]
+x_B (B^-1 * b): [2.000, 6.000, 2.000]
+Priced-out reduced costs:
+  x1=0.000  x2=0.000  s1=0.000  s2=-1.500  s3=-1.000
+Objective value this iteration: 36.000
+
+=== Result ===
+Status: Optimal
+Optimal Z = 36.000
+  x1 = 2.000
+  x2 = 6.000
+
