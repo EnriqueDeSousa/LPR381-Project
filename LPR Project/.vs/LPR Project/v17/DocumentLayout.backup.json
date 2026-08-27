@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|c:\\users\\user\\desktop\\bc stuff\\lpr381\\lpr381-project\\lpr project\\branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\branchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:branchandboundsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\linearprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:linearprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\simplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:simplexsolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79347A33-80A8-4028-818C-1FCB9868A736}|LPR Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
+              "RelativeDocumentMoniker": "Home.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
+              "RelativeToolTip": "Home.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T13:16:52.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BranchAndBoundSimplex.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSimplex.cs",
+              "RelativeDocumentMoniker": "BranchAndBoundSimplex.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSimplex.cs [Design]",
+              "RelativeToolTip": "BranchAndBoundSimplex.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T13:15:34.204Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BranchAndBoundSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSimplex.cs",
+              "RelativeDocumentMoniker": "BranchAndBoundSimplex.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSimplex.cs",
+              "RelativeToolTip": "BranchAndBoundSimplex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T13:09:18.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T15:06:00.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SimplexSolver.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\SimplexSolver.cs",
+              "RelativeDocumentMoniker": "SimplexSolver.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\SimplexSolver.cs",
+              "RelativeToolTip": "SimplexSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T16:11:22.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LinearProgram.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\LinearProgram.cs",
+              "RelativeDocumentMoniker": "LinearProgram.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\LinearProgram.cs",
+              "RelativeToolTip": "LinearProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T16:10:08.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BranchAndBoundSolver.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSolver.cs",
+              "RelativeDocumentMoniker": "BranchAndBoundSolver.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\BranchAndBoundSolver.cs",
+              "RelativeToolTip": "BranchAndBoundSolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-15T15:56:47.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs",
+              "RelativeDocumentMoniker": "Home.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\BC Stuff\\LPR381\\LPR381-Project\\LPR Project\\Home.cs [Design]",
+              "RelativeToolTip": "Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T12:28:01.914Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
