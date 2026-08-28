@@ -9,12 +9,20 @@ namespace LPR381Solver.IO
 {
     public static class InputParser
     {
+        /// <summary>Reads and parses a model from a file on disk.</summary>
         public static LPModel Parse(string path)
         {
             if (!File.Exists(path))
                 throw new FileNotFoundException($"Input file not found: {path}");
 
-            var lines = File.ReadAllLines(path)
+            return ParseText(File.ReadAllText(path));
+        }
+
+        /// <summary>Parses a model directly from its text content (e.g. from a GUI text box),
+        /// with no file access involved.</summary>
+        public static LPModel ParseText(string text)
+        {
+            var lines = (text ?? "").Replace("\r\n", "\n").Split('\n')
                              .Select(l => l.Trim())
                              .Where(l => l.Length > 0)
                              .ToList();
